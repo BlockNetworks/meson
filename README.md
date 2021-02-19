@@ -38,6 +38,12 @@ or via [PyPi](https://pypi.python.org/pypi/ninja)
 python3 -m pip install ninja
 ```
 
+Then run the following command:
+
+```console
+python ./setup.py install
+```
+
 More on Installing Meson build can be found at the
 [getting meson page](https://mesonbuild.com/Getting-meson.html).
 
