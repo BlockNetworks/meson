@@ -91,6 +91,9 @@ jobs:
             export OBJC=clang
             export OBJCXX=clang++
           fi
+          if [[ '${{ matrix.WINDRES }}' == 'llvm' ]]; then
+            export WINDRES=llvm-rc
+          fi
 
           if [[ "${{ matrix.MSYS2_CURSES }}" != "" ]]; then
             pacman --noconfirm --needed -S mingw-w64-${{ matrix.MSYS2_ARCH }}-${{ matrix.MSYS2_CURSES }}
